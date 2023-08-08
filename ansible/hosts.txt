@@ -1,0 +1,21 @@
+[nginx_revers_proxy]
+main ansible_host=3.121.207.65 ansible_user=admin ansible_ssh_private_key_file=/home/sergei/.ssh/id_rsa	
+
+[staging_ec2]
+
+[staging_bd] 
+
+[staging_ALL:children]
+staging_ec2
+staging_bd
+
+
+[test_ec2]
+[test_bd]
+
+
+[prod_ec2]
+[prod_db]
+
+[db]
+
